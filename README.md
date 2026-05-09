@@ -25,5 +25,5 @@ Para la entrega del proyecto, sigue los siguientes pasos:
 
 ### 📌 Enlace público:
 
-* Subid el proyecto a **GitHub Pages** o una plataforma similar. *(https://miguelarmasc.github.io/Entregable-4-CSS/).*
+* Subid el proyecto a **GitHub Pages** o una plataforma similar. *(https://miguelarmasc.github.io/Entregable-5-CSS/).*
 * Se requerirá un **enlace público** para la corrección.
