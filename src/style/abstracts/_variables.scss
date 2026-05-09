@@ -1,0 +1,28 @@
+@use '../vendors/vendors' as *;
+/* Variables */
+
+/*FONTS*/
+$general-font: "Poppins", sans-serif;
+$titule-font: "Merriweather", serif;
+
+/*COLORS*/
+$pink:rgba(219, 42, 107, 1);
+$green-blue:rgba(96, 211, 217, 1);
+$orange:rgba(255, 126, 41, 1);
+$yellow:rgba(244, 184, 64, 1);
+$violet: rgba(110, 31, 237, 1);
+$white: rgba(255, 255, 255, 1);
+$gray: rgba(171, 171, 171);
+$black: rgb(0, 0, 0);
+$light-black: rgba(36, 36, 36, 0.5);
+$light-black-2: rgba(36, 36, 36, 0.7);
+$green-skipe:rgba(78, 225, 160);
+$red: red;
+$yellow-2: yellow;
+$pink-2: rgb(255, 96, 234);
+
+// VIEWPORT SIZE
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1200px;
+$bp-desktop-xl: 1440px;

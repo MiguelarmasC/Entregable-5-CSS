@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.registro{
+    h1{
+        font-family: $titule-font;
+        font-size: 35px;
+        margin-bottom: 30px;
+        color: $yellow;
+    }
+    form{
+        margin-bottom: 50px;
+        legend{
+            color: $pink-2;
+        }
+        fieldset{
+            padding: 10px;
+            border-color: $yellow;
+            background-color: $light-black;
+            
+        }
+        .foto{
+            display: inline-block;
+            position: relative;
+            @include selet-foto;
+            width: 62%;
+            margin-bottom: 15px;
+            &:hover{
+                cursor: url(../../img/comun/Pointer.png), pointer;
+            }
+        }
+        #foto{
+            display: none;
+        }
+        input{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid $yellow;
+            margin-bottom: 10px;
+            &:hover{
+                cursor: url(../../img/comun/Pointer.png), pointer;
+            }
+        }
+        label{
+            &:hover{
+                cursor: url(../../img/comun/Pointer.png), pointer;
+            }
+        }
+        textarea{
+            background-color: transparent;
+            outline: none;
+            border-color: $yellow;
+        }
+    }
+}

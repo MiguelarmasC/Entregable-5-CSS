@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.full-stack, .blockchain{
+    h1{
+        font-family: $titule-font;
+        font-size: 40px;
+        margin-bottom: 45px;
+        color: $yellow;
+        text-align: center;
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+        img{
+            border-radius: 30px;
+            width: 85%;
+        }
+    }
+    p{
+        width: 90%;
+        text-align: justify;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 20px;
+    }
+    h2{
+        position: relative;
+        font-family: $titule-font;
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: $yellow;
+        @include line-decoration(-10px);
+    }
+    ul{
+        padding-left: 16px;
+        margin-bottom: 30px;
+        li{
+            color: $pink-2;
+        }
+    }
+}
+.btn-back{
+    @include button($yellow);
+    @include reset-link($black);
+    @include hover-link($white);
+    margin-bottom: 50px;
+    position: relative;
+    left: 4%;
+}

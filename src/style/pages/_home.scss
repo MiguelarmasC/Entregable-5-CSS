@@ -1,0 +1,147 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.home{
+    .hero-home{
+        h1{
+            font-family: $titule-font;
+            font-size: 40px;
+            margin-bottom: 30px;
+            color: $yellow;
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            img{
+                margin-bottom: 50px;
+                border-radius: 30px;
+                width: 85%;
+            }
+        }
+        p{
+            width: 90%;
+            text-align: justify;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            text-indent: 20px;
+        }
+    }
+    .equipo-home{
+        h2{
+            position: relative;
+            font-family: $titule-font;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: $yellow;
+            @include line-decoration(-10px);
+        }
+        p{
+            width: 98%;
+            text-align: justify;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            text-indent: 20px;
+            a{
+                text-transform: uppercase;
+                display: inline-block;
+                @include reset-link($pink-2);
+                position: relative;
+                @include underline-decoration(100%, 0px, 2px);
+                @include hover-link($yellow);
+                transition: transform 0.3s ease;
+                text-indent: 0px;
+                left: 5px;
+            }
+        }
+    }
+    .cursos-home{
+        h2{
+            position: relative;
+            @include line-decoration(-10px);
+            font-family: $titule-font;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: $yellow;
+        }
+        p{
+            width: 90%;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            text-indent: 20px;
+            a{
+                text-transform: uppercase;
+                display: inline-block;
+                @include reset-link($pink-2);
+                position: relative;
+                @include underline-decoration(100%, 0px, 2px);
+                @include hover-link($yellow);
+                transition: transform 0.3s ease;
+                text-indent: 0px;
+            }
+        }
+        ul{
+            padding-left: 16px;
+            margin-bottom: 15px;
+            li{
+                color: $pink-2;
+            }
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            img{
+                margin-bottom: 50px;
+                border-radius: 30px;
+                width: 85%;
+            }
+        }
+    }
+    .noti-home{
+        h2{
+            position: relative;
+            @include line-decoration(-10px);
+            font-family: $titule-font;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: $yellow;
+        }
+        p{
+            width: 95%;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            text-indent: 20px;
+            a{
+                text-transform: uppercase;
+                display: inline-block;
+                @include reset-link($pink-2);
+                position: relative;
+                @include underline-decoration(100%, 0px, 2px);
+                @include hover-link($yellow);
+                transition: transform 0.3s ease;
+                text-indent: 0px;
+            }
+        }
+        ul{
+            padding-left: 16px;
+            margin-bottom: 50px;
+            list-style:none;
+            a{
+                
+                display: inline-block;
+                @include reset-link($pink-2);
+                position: relative;
+                @include underline-decoration(100%, 0px, 2px);
+                @include hover-link($yellow);
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+}

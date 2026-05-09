@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as *;
+/* Base styles */
+* {
+    font-size: 16px;
+    font-family: $general-font;
+    color: $white;
+}
+
+html{
+    background-color: $black;
+}
+
+body {
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+}

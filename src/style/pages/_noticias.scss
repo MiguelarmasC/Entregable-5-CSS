@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.noti1, .noti2{
+    h1{
+        font-family: $titule-font;
+        font-size: 28px;
+        margin-bottom: 30px;
+        color: $yellow;
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        img{
+            margin-bottom: 50px;
+            border-radius: 30px;
+            width: 85%;
+        }
+    }
+    p{
+        width: 95%;
+        text-align: justify;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: 20px;
+    }
+    ul{
+        padding-left: 16px;
+        margin-bottom: 15px;
+        li{
+            color: $pink-2;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.iniciando{
+    h1{
+        font-family: $titule-font;
+        font-size: 40px;
+        margin-bottom: 30px;
+        color: $yellow;
+    }
+    p{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    figure{
+        display: flex;
+        justify-content: center;
+        img{
+            margin-bottom: 50px;
+        }
+    }
+}

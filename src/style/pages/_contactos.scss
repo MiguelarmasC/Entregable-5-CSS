@@ -1,0 +1,96 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.contac{
+    .contactos{
+        h1{
+            font-family: $titule-font;
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: $yellow;
+        }
+        ul{
+            list-style: none;
+            margin-bottom: 45px;
+            span{
+                color: $pink-2;
+                font-weight: bold;
+            }
+        }
+    }
+    .redes{
+        h2{
+            position: relative;
+            font-family: $titule-font;
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: $yellow;
+            @include line-decoration(-10px);
+        }
+        ul{
+            list-style: none;
+            margin-bottom: 45px;
+            span{
+                color: $pink-2;
+                font-weight: bold;
+            }
+        }
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        h2{
+            position: relative;
+            font-family: $titule-font;
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: $yellow;
+            @include line-decoration(-10px);
+        }
+        iframe{
+            align-self: center;
+            margin-bottom: 50px;
+            border-radius: 20px;
+        }
+    }
+    .help{
+        h2{
+            position: relative;
+            font-family: $titule-font;
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: $yellow;
+            @include line-decoration(-10px);
+        }
+        form{
+            margin-bottom: 50px;
+            fieldset{
+                padding: 10px;
+                border-color: $yellow;
+                background-color: $light-black;
+            }
+            input{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid $yellow;
+                margin-bottom: 10px;
+                &:hover{
+                    cursor: url(../../img/comun/Pointer.png), pointer;
+                }
+            }
+            label{
+                color: $pink-2;
+                font-weight: bold;
+                &:hover{
+                    cursor: url(../../img/comun/Pointer.png), pointer;
+                }
+            }
+            textarea{
+                background-color: transparent;
+                outline: none;
+                border-color: $yellow;
+            }   
+        }
+    }
+}

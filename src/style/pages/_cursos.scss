@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.cursos{
+    
+    h1{
+        font-family: $titule-font;
+        font-size: 40px;
+        margin-bottom: 40px;
+        color: $yellow;
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            margin-bottom: 50px;
+            border-radius: 30px;
+            margin-top: 20px;
+            width: 85%;
+        }
+    }
+    p{
+        text-indent: 20px;
+    }
+    ul{
+        margin-bottom: 50px;
+        list-style: none;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;       
+        a{
+            position: relative;
+            display: inline-block;
+            @include reset-link($pink-2);
+            @include underline-decoration(100%, 0px, 2px);
+            @include hover-link($yellow);
+            transition: transform 0.3s ease;
+        }
+        
+    }
+}

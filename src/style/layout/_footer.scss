@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+footer{
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    @include line-decoration(-10px);
+    a{
+        text-transform: uppercase;
+        display: inline-block;
+        @include reset-link($pink-2);
+        position: relative;
+        @include underline-decoration(100%, 0px, 2px);
+        @include hover-link($yellow);
+        transition: transform 0.3s ease;
+    }
+}

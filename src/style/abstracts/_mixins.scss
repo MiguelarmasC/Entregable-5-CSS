@@ -1,0 +1,97 @@
+@use '../abstracts/variables' as *;
+
+/* Mixins */
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+@mixin reset-link($color) {
+  text-decoration: none;
+  color: $color;
+}
+
+@mixin hover-link($color){
+  &:hover{
+    color: $color;
+    cursor: url(../../img/comun/Pointer.png), pointer;
+    transform: scale(1.2);
+  }
+}
+
+@mixin underline-decoration($width, $bottom, $heigth){
+  &::after{
+    content: '';
+    background-color: $red;
+    display:inline-block;
+    width: $width;            
+    height: $heigth;
+    position: absolute;
+    left: 0;
+    bottom: $bottom;
+  }
+}
+
+@mixin selet-foto{
+  &::after{
+    content: 'Seleccionar';
+    color: $white;
+    display: block;
+    width: 202px;
+    height: 26px;
+    border-bottom: 2px solid $yellow;
+    background-color: transparent;
+    margin-top: 5px;
+  }
+}
+
+@mixin line-decoration($top){
+  &::before{
+    content: '';
+    background-color: $white;
+    display:inline-block;
+    width: 100%;            
+    height: 2px;
+    position: absolute;
+    top: $top;
+  }
+}
+
+@mixin button($color){
+  display: inline-block;
+  background-color: $color;
+  padding: 10px;
+  border-radius: 15px;
+  &:hover{
+    background-color: $pink-2;
+  }
+}
+
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}

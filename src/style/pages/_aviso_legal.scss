@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.avisos{
+    h1{
+        font-family: $titule-font;
+        font-size: 35px;
+        margin-bottom: 30px;
+        color: $yellow;
+        text-align: center;
+    }
+    .info{
+        border: 2px solid $yellow;
+        padding: 8px;
+        margin-bottom: 50px;
+        p{
+            text-align: left;
+            margin-bottom: 8px;
+        }
+    }
+    
+}

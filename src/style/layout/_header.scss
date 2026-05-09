@@ -1,0 +1,73 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.container{
+    padding: 16px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    main{
+        flex: 1;
+        min-height: 100vw;
+    }
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 50px;
+   .enlace{
+        .logo{
+            width: 80px;           
+            height: auto;
+            &:hover{
+                cursor: url(../../img/comun/Pointer.png), pointer;
+            }
+        }
+    }
+    .menu-content{
+        position: relative;
+        input{
+            display: none;
+            &:checked ~ nav{
+                visibility: visible;
+                opacity: 1;
+            }
+        }  
+        .menu{
+            &:hover{
+                cursor: url(../../img/comun/Pointer.png), pointer;
+            }
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+        nav{
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            right: 0%;
+        }
+        ul{
+            @include reset-list;
+            flex-direction: column;
+            gap: 5px;
+            li{
+                background-color: $pink-2;
+                border-radius: 5px;
+                text-align: center;
+                &:hover{
+                    background-color: $yellow;
+                    cursor: url(../../img/comun/Pointer.png), pointer;
+                }
+            }
+            a{
+                @include reset-link($black);
+                padding: 2px;
+                font-weight: 500;
+                cursor: url(../../img/comun/Pointer.png), pointer;
+            }
+        }
+    }  
+}
