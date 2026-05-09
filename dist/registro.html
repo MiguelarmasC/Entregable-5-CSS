@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Regristro</title>
+    <meta name="description" content="Formulario de registro">
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+    <meta name="author" content="Miguel Armas">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1e7bbf">
+  <script type="module" crossorigin src="/Demo-Academy/assets/main-BU-vFVR8.js"></script>
+  <link rel="stylesheet" crossorigin href="/Demo-Academy/assets/main-C_cptyiL.css">
+</head>
+
+<body>
+    <div class="container">
+       <header>
+            <a href="./index.html" class="enlace"><img class="logo" src="/Demo-Academy/assets/logotipo-v2-D9nsbiWJ.PNG" alt="Logotipo de Conquer Academy"></a>
+            <div class="menu-content">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="menu"><img src="/Demo-Academy/assets/menu-hamb-DkjcY40z.webp" alt="menu desplegable"></label>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./quienes_somos.html">Quiénes somos</a></li>
+                        <li><a href="./cursos.html">Cursos</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./registro.html">Registro</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./contacto.html">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="registro">
+                <h1>Registro de usuarios</h1>
+                <form action="./regis.html" method="get" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Formulario de registro de usuarios</legend>
+                        <p> <label for="name">Nombre</label><br>
+                            <input type="text" name="nombre" id="name" autocomplete="off" required minlength="3">
+                        </p>
+                        <p>
+                            <label for="nacimiento">Fecha de nacimiento</label><br>
+                            <input type="date" name="fecha-nacimiento" id="nacimiento" max="2007-12-31" min="1925-01-01" required>
+                        </p>
+                        <p>
+                            <label for="correo">Email</label><br>
+                            <input type="email" name="e-correo" id="correo" autocomplete="off" required>
+                        </p>
+                        <p>
+                            <label for="pg-wed">Pagina wed</label><br>
+                            <input type="text" name="wed" id="pg-wed" autocomplete="off">
+                        </p>
+                        <p>
+                            <label class="foto" for="foto">Foto</label><br>
+                            <input type="file" name="Foto" id="foto">
+                        </p>
+                        <p>
+                            <label for="bio">Biografía</label><br>
+                            <textarea name="biografia" id="bio" cols="30" rows="5"></textarea>
+                        </p>
+                        <p>
+                            <input type="submit">
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>© Conquer Crypto 2023</p> 
+            <a href="./aviso_legal.html">Aviso Legal</a>
+        </footer>
+    </div>
+</body>
+
+</html>
