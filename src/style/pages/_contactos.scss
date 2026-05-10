@@ -63,6 +63,9 @@
             @include line-decoration(-10px);
         }
         form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 50px;
             fieldset{
                 padding: 10px;

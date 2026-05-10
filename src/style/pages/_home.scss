@@ -21,12 +21,8 @@
             }
         }
         p{
-            width: 90%;
-            text-align: justify;
-            margin-bottom: 30px;
-            margin-left: auto;
-            margin-right: auto;
-            text-indent: 20px;
+            width: 94%;
+            margin-bottom: 40px;
         }
     }
     .equipo-home{
@@ -39,12 +35,7 @@
             @include line-decoration(-10px);
         }
         p{
-            width: 98%;
-            text-align: justify;
             margin-bottom: 30px;
-            margin-left: auto;
-            margin-right: auto;
-            text-indent: 20px;
             a{
                 text-transform: uppercase;
                 display: inline-block;
@@ -54,7 +45,6 @@
                 @include hover-link($yellow);
                 transition: transform 0.3s ease;
                 text-indent: 0px;
-                left: 5px;
             }
         }
     }
@@ -68,11 +58,8 @@
             color: $yellow;
         }
         p{
-            width: 90%;
-            margin-bottom: 30px;
-            margin-left: auto;
-            margin-right: auto;
             text-indent: 20px;
+            margin-bottom: 30px;
             a{
                 text-transform: uppercase;
                 display: inline-block;
@@ -86,7 +73,7 @@
         }
         ul{
             padding-left: 16px;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             li{
                 color: $pink-2;
             }
@@ -113,11 +100,8 @@
             color: $yellow;
         }
         p{
-            width: 95%;
-            margin-bottom: 30px;
-            margin-left: auto;
-            margin-right: auto;
             text-indent: 20px;
+            margin-bottom: 40px;
             a{
                 text-transform: uppercase;
                 display: inline-block;
@@ -131,10 +115,9 @@
         }
         ul{
             padding-left: 16px;
-            margin-bottom: 50px;
+            margin-bottom: 70px;
             list-style:none;
             a{
-                
                 display: inline-block;
                 @include reset-link($pink-2);
                 position: relative;

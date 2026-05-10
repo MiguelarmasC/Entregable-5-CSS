@@ -2,6 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 .login{
+    margin-bottom: 138%;
     h1{
         font-family: $titule-font;
         font-size: 35px;
@@ -9,7 +10,6 @@
         color: $yellow;
     }
     form{
-        margin-bottom: 50px;
         fieldset{
             padding: 10px;
             border-color: $yellow;
