@@ -8,14 +8,23 @@
         margin-bottom: 30px;
         color: $yellow;
         text-align: center;
+        @include breakpoint(tablet){
+            font-size: 50px;
+        }
     }
     .info{
         border: 2px solid $yellow;
         padding: 8px;
         margin-bottom: 50px;
+        @include breakpoint(tablet){
+            margin-bottom: 15%;
+        }
         p{
             text-align: left;
             margin-bottom: 8px;
+            @include breakpoint(tablet){
+                font-size: 20px;
+            }
         }
     }
     

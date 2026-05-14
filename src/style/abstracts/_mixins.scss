@@ -61,6 +61,24 @@
   }
 }
 
+@mixin foto-deco($valor){
+  &::after{
+    content: '';
+    display: block;
+    width: 30vw;
+    height: 25vw;
+    min-height: 150px;
+    max-height: 450px;
+    background-image: $valor;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin-top: 35px;
+
+  }
+}
+
 @mixin button($color){
   display: inline-block;
   background-color: $color;

@@ -3,12 +3,23 @@
 
 .noti-blog{
     .actualidad{
+        @include breakpoint(tablet){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto;
+            align-items: center;
+            gap: 10px;
+        }
         h1{
             font-family: $titule-font;
             font-size: 40px;
             margin-bottom: 50px;
             color: $yellow;
             text-align: center;
+            @include breakpoint(tablet){
+                grid-column: span 2;
+                font-size: 55px;
+            }
         }
         figure{
             display: flex;
@@ -16,6 +27,10 @@
             justify-content: center;
             align-items: center;
             gap: 0px;
+            @include breakpoint(tablet){
+                margin-left: auto;
+                margin-right: auto;
+            }
             img{
                 border-radius: 30px;
                 width: 95%;
@@ -28,6 +43,15 @@
                 color: $pink-2;
                 font-size: 18px;
                 font-weight: bold;
+                @include breakpoint(tablet){
+                    font-size: 20px;
+                }
+            }
+            @include breakpoint(tablet){
+               font-size: 20px;
+               width: 80%;
+               margin-left: auto;
+               margin-right: auto;
             }
         }
     }
@@ -39,6 +63,10 @@
             margin-bottom: 30px;
             color: $yellow;
             @include line-decoration(-10px);
+            @include breakpoint(tablet){
+                text-align: center;
+                font-size: 45px;
+            }
         }
         ul{
             margin-bottom: 40px;
@@ -46,6 +74,21 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            @include breakpoint(tablet){
+               flex-direction: row;
+               gap: 100px;
+               padding-left: 2%
+            }
+            .destk-1{
+                @include breakpoint(tablet){
+                    @include foto-deco(url(../../img/Blog-noticias/noticias/noti1.png));
+                }
+            }
+            .destk-2{
+                @include breakpoint(tablet){
+                    @include foto-deco(url(../../img/Blog-noticias/noticias/noti2.png));
+                }
+            }
             a{
                 @include reset-link($pink-2);
                 @include hover-link($yellow);

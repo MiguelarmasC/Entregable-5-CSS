@@ -46,4 +46,106 @@
     margin-bottom: 50px;
     position: relative;
     left: 4%;
+    @include breakpoint(tablet){
+        position: absolute;
+        bottom: 9%;
+        left: 16%;       
+    }
+}
+
+.full-stack{
+    @include breakpoint(tablet){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto;
+    }
+    h1{
+        @include breakpoint(tablet){
+            grid-column:  span 2;
+            font-size: 48px;
+            margin-bottom: 70px;
+        }
+    }
+    figure{
+        @include breakpoint(tablet){
+            grid-row: span 2;
+            margin-bottom: 0px;
+            position: relative;
+            top: 15px;
+        }
+    }
+    p{
+        @include breakpoint(tablet){
+            align-self: end;
+            font-size: 19px;
+            margin-bottom: 0px;
+        }
+    }
+    h2{
+        @include breakpoint(tablet){
+            grid-column: span 2;
+            margin-top: 65px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+    ul{
+        @include breakpoint(tablet){
+            grid-column: 2;
+            grid-row: 5;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.blockchain{
+    @include breakpoint(tablet){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto;
+    }
+    h1{
+        @include breakpoint(tablet){
+            grid-column:  span 2;
+            font-size: 45px;
+            margin-bottom: 80px;
+        }
+    }
+    figure{
+        @include breakpoint(tablet){
+            grid-row: span 2;
+            margin-bottom: 0px;
+            position: relative;
+            top: 15px;
+        }
+        img{
+            border-radius: 30px;
+            width: 85%;
+            @include breakpoint(tablet){
+                width: 88%;
+            }
+        }
+    }
+    p{
+        @include breakpoint(tablet){
+            align-self: end;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+    }
+    h2{
+        @include breakpoint(tablet){
+            grid-column: span 2;
+            margin-top: 8%;
+            margin-bottom: 45px;
+            text-align: center;
+        }
+    }
+    ul{
+        @include breakpoint(tablet){
+            grid-column: 2;
+            grid-row: 5;
+            margin-bottom: 0px;
+        }
+    }
 }

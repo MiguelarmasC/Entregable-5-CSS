@@ -10,6 +10,9 @@
     }
     form{
         margin-bottom: 50px;
+        @include breakpoint(tablet){
+            margin-bottom: 70px;
+        }
         legend{
             color: $pink-2;
         }
@@ -17,7 +20,6 @@
             padding: 10px;
             border-color: $yellow;
             background-color: $light-black;
-            
         }
         .foto{
             display: inline-block;

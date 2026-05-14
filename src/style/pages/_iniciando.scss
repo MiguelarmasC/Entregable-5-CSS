@@ -3,6 +3,9 @@
 
 .iniciando{
     margin-bottom: 63%;
+    @include breakpoint(tablet){
+        margin-bottom: 30%;
+    }
     h1{
         font-family: $titule-font;
         font-size: 40px;

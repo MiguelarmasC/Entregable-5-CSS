@@ -10,6 +10,9 @@
     main{
         flex: 1;
         min-height: 100vw;
+        @include breakpoint(tablet){
+            min-height: 70vw;
+        }
     }
 }
 
