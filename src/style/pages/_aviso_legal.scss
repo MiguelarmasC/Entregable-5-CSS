@@ -5,25 +5,27 @@
     h1{
         font-family: $titule-font;
         font-size: 35px;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
         color: $yellow;
         text-align: center;
         @include breakpoint(tablet){
-            font-size: 50px;
+            font-size: 55px;
+            margin-bottom: 135px;
         }
     }
     .info{
         border: 2px solid $yellow;
         padding: 8px;
-        margin-bottom: 50px;
+        margin-bottom: 26%;
         @include breakpoint(tablet){
-            margin-bottom: 15%;
+            margin-bottom: 39%;
         }
         p{
             text-align: left;
             margin-bottom: 8px;
             @include breakpoint(tablet){
                 font-size: 20px;
+                
             }
         }
     }

@@ -39,7 +39,7 @@
         }
     }
 }
-.btn-back{
+.btn-back-full{
     @include button($yellow);
     @include reset-link($black);
     @include hover-link($white);
@@ -53,11 +53,27 @@
     }
 }
 
+.btn-back-chain{
+    @include button($yellow);
+    @include reset-link($black);
+    @include hover-link($white);
+    margin-bottom: 50px;
+    position: relative;
+    left: 4%;
+    @include breakpoint(tablet){
+        position: absolute;
+        bottom: 12%;
+        left: 16%;       
+    }
+}
+
+// Ajustes para versiones tablet y desktop.
 .full-stack{
     @include breakpoint(tablet){
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto auto auto auto;
+        margin-bottom: 10%;
     }
     h1{
         @include breakpoint(tablet){
@@ -94,6 +110,7 @@
             grid-column: 2;
             grid-row: 5;
             margin-bottom: 0px;
+            margin-top: 15px;
         }
     }
 }
@@ -103,6 +120,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto auto auto auto;
+        margin-bottom: 14%;
     }
     h1{
         @include breakpoint(tablet){
@@ -145,6 +163,7 @@
         @include breakpoint(tablet){
             grid-column: 2;
             grid-row: 5;
+            margin-top: 16px;
             margin-bottom: 0px;
         }
     }

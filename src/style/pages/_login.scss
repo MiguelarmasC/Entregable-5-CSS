@@ -2,9 +2,9 @@
 @use '../abstracts/mixins' as *;
 
 .login{
-    margin-bottom: 82%;
+    margin-bottom: 109%;
     @include breakpoint(tablet){
-        margin-bottom: 0px;
+       margin-bottom: 77%;
     }
     h1{
         font-family: $titule-font;

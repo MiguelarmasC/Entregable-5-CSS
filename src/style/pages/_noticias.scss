@@ -30,7 +30,21 @@
         }
     }
 }
-.btn-back-bg{
+.btn-back-noti1{
+    @include button($yellow);
+    @include reset-link($black);
+    @include hover-link($white);
+    margin-bottom: 50px;
+    position: relative;
+    left: 4%;
+    @include breakpoint(tablet){
+       position: absolute;
+        left: 72%; 
+        bottom: 9%;       
+    }
+}
+
+.btn-back-noti2{
     @include button($yellow);
     @include reset-link($black);
     @include hover-link($white);
@@ -41,6 +55,10 @@
        position: absolute;
         left: 68%; 
         bottom: 4%;       
+    }
+    @include breakpoint(tablethorizontal){
+        left: 77%; 
+        bottom: 2%;     
     }
 }
 
@@ -167,12 +185,22 @@
             top: 5%;
         }
     }
+    p:nth-of-type(3){
+        @include breakpoint(tablethorizontal){
+            position: relative;
+            bottom: 53%;
+        }
+    }
     p:nth-of-type(4){
         @include breakpoint(tablet){
             grid-column: 2;
             grid-rows: 2;
             position: relative;
             bottom: 80%;
+        }
+        @include breakpoint(tablethorizontal){
+            position: relative;
+            bottom: 180%;
         }
     }
     p:last-of-type{
@@ -187,6 +215,10 @@
                     font-size: 20px;
                 }
             }
-        } 
+        }
+        @include breakpoint(tablethorizontal){
+            position: relative;
+            bottom: 415%;
+        }
     }
 }

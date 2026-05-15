@@ -9,9 +9,9 @@
         color: $yellow;
     }
     form{
-        margin-bottom: 50px;
+        margin-bottom: 24%;
         @include breakpoint(tablet){
-            margin-bottom: 70px;
+            margin-bottom: 36%;
         }
         legend{
             color: $pink-2;

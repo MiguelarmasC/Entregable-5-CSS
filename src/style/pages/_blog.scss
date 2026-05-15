@@ -2,6 +2,9 @@
 @use '../abstracts/mixins' as *;
 
 .noti-blog{
+    @include breakpoint(tablet){
+        margin-bottom: 11%;
+    }
     .actualidad{
         @include breakpoint(tablet){
             display: grid;

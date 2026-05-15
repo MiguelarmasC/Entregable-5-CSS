@@ -2,24 +2,24 @@
 @use '../abstracts/mixins' as *;
 
 .confir{
-    margin-bottom: 100%;
+    margin-bottom: 122%;
     @include breakpoint(tablet){
-        margin-bottom: 50%;
+        margin-bottom: 76%;
     }
     h1{
         font-family: $titule-font;
         font-size: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 90px;
         color: $yellow;
         text-align: center;
         @include breakpoint(tablet){
             font-size: 55px;
+            margin-bottom: 140px;
         }
     }
     p{
         @include breakpoint(tablet){
             font-size: 20px;
-            width: 95%;
             margin-left: auto;
             margin-right: auto;
         }
