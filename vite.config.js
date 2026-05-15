@@ -20,7 +20,7 @@ export default defineConfig({
         iniciando: resolve(__dirname, 'iniciando.html'),
         noticia_1: resolve(__dirname, 'noticia_1.html'),
         noticia_2: resolve(__dirname, 'noticia_2.html'),
-        regis: resolve(__dirname, 'regis.html'),
+        confirmacion: resolve(__dirname, 'confirmacion.html'),
       },
     },
   },
